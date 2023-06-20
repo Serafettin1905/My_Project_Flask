@@ -85,7 +85,7 @@ cd ..
 python3 app.py
 ```
 ```bash
-aws ec2 run-instances --image-id $LATEST_AMI --count 1 --instance-type t2.micro --key-name first-key-pair --security-group-ids sg-05b85f6604084174a --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=roman_numbers}]' --user-data file:///home/ec2-user/userdata.sh
+aws ec2 run-instances --image-id $LATEST_AMI --count 1 --instance-type t2.micro --key-name first-key-pair --security-group-ids sg-0c9de3a7844e80b65 --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=roman_numbers}]' --user-data file:///home/ec2-user/userdata.sh
 or
 
 aws ec2 run-instances \
